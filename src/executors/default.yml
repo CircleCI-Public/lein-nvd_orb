@@ -2,11 +2,11 @@
 description: >
   A Docker container that can be used to run lein nvd check.
 docker:
-  - image: 'circleci/clojure:<<parameters.tag>>'
+  - image: 'cimg/clojure:<<parameters.tag>>'
 parameters:
   tag:
-    default: latest
-    description: >
-      Variant of circleci/clojure image to use:
-      http://hub.docker.com/r/circleci/clojure/tags
+    default: "1.10"
+    description: |
+      Select an available tag here:
+      https://hub.docker.com/r/cimg/clojure/tags
     type: string
