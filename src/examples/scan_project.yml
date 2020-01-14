@@ -9,3 +9,4 @@ usage:
       jobs:
         - lein-nvd/scan:
             suppressions_file: ./suppression.xml
+
