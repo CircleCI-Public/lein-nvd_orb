@@ -3,7 +3,6 @@ version: 2.1
 description: >
   Easily install and use the Heroku CLI with CircleCI to build, test, and deploy your applications to Heroku.
 
-# This information will be displayed in the orb registry and is not mandatory.
 display:
-  home_url: "https://www.website.com/docs"
+  home_url: "https://github.com/rm-hull/lein-nvd"
   source_url: "https://github.com/CircleCI-Public/heroku-orb"
