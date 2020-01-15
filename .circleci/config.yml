@@ -28,7 +28,8 @@ jobs:
     executor: lein-nvd/default
     steps:
       - checkout
-      - lein-nvd/run_lein_nvd
+      - lein-nvd/run_lein_nvd:
+            suppressions_file: ./suppression.xml
       - run:
           name: Check lein-nvd
           command: echo "test"; echo $profiles;
