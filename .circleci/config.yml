@@ -25,10 +25,14 @@ jobs:
   # Rename this job and add more as needed.
   #
   integration-test-1:
-    executor: orb-tools/ubuntu
+    executor: lein-nvd/default
     steps:
       - checkout
-    # - your-orb/your-orb-command
+      - lein-nvd/run_lein_nvd
+      - run:
+          name: Check lein-nvd
+          command: echo "test"; echo $profiles;
+
 
 workflows:
   # This `lint-pack_validate_publish-dev` workflow will run on any commit.
