@@ -1,8 +1,8 @@
 version: 2.1
 
 description: >
-  Easily install and use the Heroku CLI with CircleCI to build, test, and deploy your applications to Heroku.
+  Automatically and easily scan a Clojure project for vulnerabilities using `lein-nvd`
 
 display:
   home_url: "https://github.com/rm-hull/lein-nvd"
-  source_url: "https://github.com/CircleCI-Public/heroku-orb"
+  source_url: "https://github.com/CircleCI-Public/lein-nvd_orb   "
