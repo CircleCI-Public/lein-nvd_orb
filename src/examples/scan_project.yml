@@ -1,0 +1,12 @@
+description: >
+  Easily scan your clojure project by simply adding the `scan` job
+usage:
+  version: 2.1
+  orbs:
+    lein-nvd: circleci/lein-nvd@x.y
+  workflows:
+    my_clojure_workflow:
+      jobs:
+        - lein-nvd/scan:
+            suppressions_file: ./suppression.xml
+
